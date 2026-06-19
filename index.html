@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best DCET Coaching in Bangalore — Elite IIT</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Poppins',sans-serif;color:#0a1f5c;background:#fff;}
+
+/* ─── TOKENS ─── */
+:root{
+  --navy:#0a1f5c;
+  --navy-mid:#1a3275;
+  --orange:#ff6b00;
+  --orange-light:#ff8c00;
+  --yellow:#ffd200;
+  --offwhite:#f5f7ff;
+  --muted:#4a5568;
+  --border:#e0e6f5;
+  --green:#00b96b;
+  --radius:20px;
+  --shadow:0 6px 28px rgba(10,31,92,0.10);
+}
+
+/* ─── SHARED ─── */
+.dc-wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+.dc-tag{display:inline-block;background:rgba(255,107,0,0.10);color:var(--orange);font-size:11px;font-weight:700;padding:4px 14px;border-radius:100px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
+.dc-tag--dark{background:var(--navy);color:var(--yellow);}
+.dc-tag--white{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);}
+.dc-h2{font-family:'Nunito',sans-serif;font-size:clamp(26px,3.5vw,38px);font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:12px;}
+.dc-h2 span{color:var(--orange);}
+.dc-sub{font-size:15px;color:var(--muted);line-height:1.8;max-width:640px;}
+.dc-btn{display:inline-block;background:var(--orange);color:#fff;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:13px 28px;border-radius:12px;border:none;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;}
+.dc-btn:hover{background:var(--orange-light);transform:translateY(-2px);}
+.dc-btn--navy{background:var(--navy);}
+.dc-btn--navy:hover{background:var(--navy-mid);}
+.dc-capsule{background:var(--offwhite);border-left:4px solid var(--orange);border-radius:0 10px 10px 0;padding:14px 18px;font-size:14px;color:#374151;line-height:1.7;margin-bottom:24px;}
+.dc-capsule strong{color:var(--navy);}
+
+/* ─── C1: HERO ─── */
+.dc-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:72px 0 64px;position:relative;overflow:hidden;}
+.dc-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:440px;height:440px;background:radial-gradient(circle,rgba(255,107,0,.16) 0%,transparent 70%);pointer-events:none;}
+.dc-hero-grid{display:grid;grid-template-columns:1fr 400px;gap:48px;align-items:start;}
+.dc-hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,107,0,.12);border:1px solid rgba(255,107,0,.35);color:#FF9A2E;font-size:13px;font-weight:600;padding:6px 14px;border-radius:100px;margin-bottom:18px;}
+.dc-hero-h1{font-family:'Nunito',sans-serif;font-size:clamp(28px,4vw,46px);font-weight:900;color:#fff;line-height:1.15;margin-bottom:16px;}
+.dc-hero-h1 span{color:var(--yellow);}
+.dc-hero-sub{color:rgba(255,255,255,.75);font-size:15px;line-height:1.7;margin-bottom:24px;max-width:500px;}
+.dc-hero-bullets{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:9px;}
+.dc-hero-bullets li{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.88);font-size:14px;}
+.dc-hero-bullets li::before{content:'';width:20px;height:20px;flex-shrink:0;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/12px no-repeat;border-radius:50%;}
+.dc-hero-stats{display:flex;gap:24px;flex-wrap:wrap;}
+.dc-hero-stat-n{font-size:22px;font-weight:900;color:var(--orange);line-height:1;}
+.dc-hero-stat-l{font-size:11px;color:rgba(255,255,255,.55);margin-top:2px;}
+
+/* Form card */
+.dc-fcard{background:#fff;border-radius:var(--radius);padding:28px 24px;box-shadow:0 20px 56px rgba(0,0,0,.28);}
+.dc-fcard-title{font-family:'Nunito',sans-serif;font-size:19px;color:var(--navy);margin-bottom:4px;font-weight:800;}
+.dc-fcard-sub{font-size:13px;color:#5A6382;margin-bottom:18px;}
+.dc-fi{width:100%;padding:12px 15px;border:1.5px solid var(--border);border-radius:10px;font-size:15px;font-family:'Poppins',sans-serif;color:var(--navy);background:#fff;margin-bottom:11px;transition:border-color .2s;outline:none;}
+.dc-fi:focus{border-color:var(--orange);}
+.dc-fbtn{display:block;width:100%;background:var(--orange);color:#fff;font-weight:700;font-size:15px;padding:14px 24px;border-radius:10px;border:none;cursor:pointer;font-family:'Poppins',sans-serif;transition:background .2s,transform .15s;}
+.dc-fbtn:hover{background:var(--orange-light);transform:translateY(-1px);}
+.dc-flock{font-size:12px;color:#5A6382;text-align:center;margin-top:8px;}
+.dc-fstatus{font-size:13px;margin-top:6px;display:none;}
+
+/* ─── C2: TRUST BAR ─── */
+.dc-trust{background:var(--orange);padding:18px 0;}
+.dc-trust-inner{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;}
+.dc-trust-item{display:flex;align-items:center;gap:8px;padding:8px 28px;border-right:1px solid rgba(255,255,255,.25);}
+.dc-trust-item:last-child{border-right:none;}
+.dc-trust-n{font-family:'Nunito',sans-serif;font-size:20px;font-weight:900;color:#fff;}
+.dc-trust-l{font-size:12px;color:rgba(255,255,255,.85);font-weight:500;}
+
+/* ─── C3: WHAT IS DCET ─── */
+.dc-what{background:#fff;padding:72px 0;}
+.dc-what-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.dc-what-facts{background:var(--offwhite);border-radius:var(--radius);padding:28px;border:1.5px solid var(--border);}
+.dc-what-facts-title{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;}
+.dc-fact-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px;}
+.dc-fact-row:last-child{border-bottom:none;}
+.dc-fact-label{color:var(--muted);font-weight:500;}
+.dc-fact-val{color:var(--navy);font-weight:700;text-align:right;}
+.dc-what-body p{font-size:14.5px;color:#374151;line-height:1.8;margin-bottom:16px;}
+.dc-what-body strong{color:var(--navy);}
+
+/* ─── C4: MID FORM ─── */
+.dc-midform{background:var(--offwhite);padding:56px 0;}
+.dc-midform-card{background:#fff;border-radius:var(--radius);padding:36px 40px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;border:1.5px solid var(--border);}
+.dc-midform-left-title{font-family:'Nunito',sans-serif;font-size:24px;font-weight:900;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.dc-midform-left-sub{font-size:14px;color:var(--muted);line-height:1.7;}
+.dc-midform-checks{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+.dc-midform-checks li{display:flex;align-items:center;gap:8px;font-size:13.5px;color:#374151;}
+.dc-midform-checks li::before{content:'✓';width:20px;height:20px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;}
+
+/* ─── C5: SYLLABUS ─── */
+.dc-syl{background:#fff;padding:72px 0;}
+.dc-syl-tabs{display:flex;gap:8px;margin-bottom:28px;background:#fff;border-radius:14px;padding:5px;box-shadow:var(--shadow);width:fit-content;}
+.dc-syl-tab{padding:10px 24px;border-radius:10px;border:none;background:transparent;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#718096;cursor:pointer;transition:all .2s;}
+.dc-syl-tab.active-eng{background:var(--navy);color:#fff;}
+.dc-syl-tab.active-arch{background:var(--orange);color:#fff;}
+.dc-syl-panel{display:none;}
+.dc-syl-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.dc-syl-card{background:#fff;border-radius:var(--radius);border:1.5px solid var(--border);padding:24px;box-shadow:var(--shadow);}
+.dc-syl-card-head{font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.dc-syl-card-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.dc-syl-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.dc-syl-list li{display:flex;align-items:center;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px solid var(--border);}
+.dc-syl-list li:last-child{border-bottom:none;}
+.dc-syl-list-name{color:#374151;font-weight:500;}
+.dc-syl-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;}
+.dc-syl-badge--eng{background:rgba(10,31,92,.08);color:var(--navy);}
+.dc-syl-badge--arch{background:rgba(255,107,0,.10);color:#c85000;}
+.dc-syl-note{background:var(--offwhite);border-radius:12px;padding:16px;margin-top:16px;font-size:13px;color:#374151;line-height:1.6;border-left:3px solid var(--yellow);}
+.dc-syl-note strong{color:var(--navy);}
+
+/* ─── C6: BATCH DETAILS ─── */
+.dc-batch{background:var(--offwhite);padding:72px 0;}
+.dc-batch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
+.dc-batch-card{background:#fff;border-radius:var(--radius);padding:28px;border:1.5px solid var(--border);transition:all .25s;position:relative;overflow:hidden;}
+.dc-batch-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .25s;}
+.dc-batch-card:hover{border-color:var(--orange);box-shadow:0 8px 30px rgba(255,107,0,.10);transform:translateY(-3px);}
+.dc-batch-card:hover::before{transform:scaleX(1);}
+.dc-batch-badge{display:inline-block;background:var(--navy);color:var(--yellow);font-size:10px;font-weight:800;padding:4px 10px;border-radius:20px;margin-bottom:14px;font-family:'Nunito',sans-serif;}
+.dc-batch-title{font-family:'Nunito',sans-serif;font-size:18px;font-weight:900;color:var(--navy);margin-bottom:8px;}
+.dc-batch-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:16px;}
+.dc-batch-detail{display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:#374151;margin-bottom:6px;}
+.dc-batch-detail span:first-child{font-size:14px;flex-shrink:0;}
+
+/* ─── C7: WHY ELITE IIT ─── */
+.dc-why{background:#fff;padding:72px 0;}
+.dc-why-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:48px;}
+.dc-vs{background:var(--offwhite);border-radius:var(--radius);border:1.5px solid var(--border);padding:24px;}
+.dc-vs-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px;}
+.dc-vs-heads{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;}
+.dc-vs-head{font-size:11px;font-weight:700;text-transform:uppercase;padding:7px 12px;border-radius:8px;text-align:center;}
+.dc-vs-head--bad{background:#fdecea;color:#b91c1c;}
+.dc-vs-head--good{background:#e6f9f0;color:#00793f;}
+.dc-vs-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+.dc-vs-cell{font-size:12.5px;padding:9px 12px;border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;}
+.dc-vs-cell--bad{background:#fff5f5;color:#7f1d1d;}
+.dc-vs-cell--good{background:#f0fdf4;color:#14532d;font-weight:600;}
+.dc-vs-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.dc-vs-dot--bad{background:#ef4444;}
+.dc-vs-dot--good{background:var(--green);}
+.dc-usp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.dc-usp-item{display:flex;gap:14px;background:var(--offwhite);border-radius:14px;padding:20px;border:1px solid var(--border);transition:box-shadow .2s;}
+.dc-usp-item:hover{box-shadow:var(--shadow);}
+.dc-usp-check{width:32px;height:32px;border-radius:9px;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.dc-usp-check svg{width:16px;height:16px;stroke:#fff;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.dc-usp-title{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px;}
+.dc-usp-text{font-size:12.5px;color:var(--muted);line-height:1.65;}
+.dc-usp-pill{display:inline-block;background:rgba(255,107,0,.08);color:var(--orange);font-size:10px;font-weight:700;padding:2px 9px;border-radius:100px;margin-top:6px;}
+
+/* ─── C8: FACULTY ─── */
+.dc-fac{background:var(--offwhite);padding:72px 0;}
+.dc-fac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
+.dc-fac-card{background:#fff;border-radius:var(--radius);padding:24px;border:1.5px solid var(--border);text-align:center;transition:all .25s;}
+.dc-fac-card:hover{border-color:var(--orange);box-shadow:0 8px 30px rgba(255,107,0,.10);transform:translateY(-3px);}
+.dc-fac-photo{width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid var(--border);margin:0 auto 14px;}
+.dc-fac-photo-placeholder{width:88px;height:88px;border-radius:50%;background:var(--offwhite);border:3px solid var(--border);margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:32px;}
+.dc-fac-name{font-family:'Nunito',sans-serif;font-size:16px;font-weight:900;color:var(--navy);margin-bottom:4px;}
+.dc-fac-subj{font-size:13px;color:var(--orange);font-weight:600;margin-bottom:4px;}
+.dc-fac-meta{font-size:12px;color:var(--muted);}
+
+/* ─── C9: DEMO FORM ─── */
+.dc-demo{background:var(--navy);padding:64px 0;}
+.dc-demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.dc-demo-left-title{font-family:'Nunito',sans-serif;font-size:28px;font-weight:900;color:#fff;line-height:1.25;margin-bottom:12px;}
+.dc-demo-left-sub{font-size:14px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:24px;}
+.dc-demo-steps{display:flex;flex-direction:column;gap:14px;}
+.dc-demo-step{display:flex;gap:14px;align-items:flex-start;}
+.dc-demo-step-num{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.12);color:var(--yellow);font-family:'Nunito',sans-serif;font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.dc-demo-step-body strong{display:block;font-size:14px;font-weight:700;color:#fff;margin-bottom:2px;}
+.dc-demo-step-body p{font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.5;}
+.dc-demo-fcard{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:0 16px 56px rgba(0,0,0,.25);}
+.dc-demo-fcard-title{font-family:'Nunito',sans-serif;font-size:18px;font-weight:900;color:var(--navy);margin-bottom:4px;}
+.dc-demo-fcard-sub{font-size:13px;color:#5A6382;margin-bottom:18px;}
+
+/* ─── C10: TESTIMONIALS ─── */
+.dc-testi{background:var(--offwhite);padding:72px 0;}
+.dc-testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
+.dc-testi-card{background:#fff;border-radius:var(--radius);padding:24px;border:1.5px solid var(--border);transition:box-shadow .2s;}
+.dc-testi-card:hover{box-shadow:var(--shadow);}
+.dc-testi-stars{color:#F5A623;font-size:14px;margin-bottom:10px;letter-spacing:2px;}
+.dc-testi-text{font-size:13.5px;color:#374151;line-height:1.75;margin-bottom:16px;font-style:italic;}
+.dc-testi-name{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:var(--navy);}
+.dc-testi-role{font-size:12px;color:var(--muted);}
+
+/* ─── C11: BRANCHES ─── */
+.dc-branch-sec{background:#fff;padding:72px 0;}
+.dc-branch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px;}
+.dc-branch-card{background:#fff;border-radius:var(--radius);border:1.5px solid var(--border);overflow:hidden;box-shadow:var(--shadow);}
+.dc-branch-head{background:var(--navy);padding:18px 22px;display:flex;align-items:center;justify-content:space-between;}
+.dc-branch-head-left{display:flex;align-items:center;gap:12px;}
+.dc-branch-num{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-size:14px;font-weight:900;color:var(--yellow);}
+.dc-branch-name{font-family:'Nunito',sans-serif;font-size:17px;font-weight:800;color:#fff;}
+.dc-branch-area{font-size:11px;color:rgba(255,255,255,.55);margin-top:1px;}
+.dc-branch-open{background:var(--orange);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;}
+.dc-branch-body{padding:20px 22px;}
+.dc-branch-addr{font-size:13px;color:#374151;line-height:1.6;margin-bottom:14px;}
+.dc-branch-nearby{font-size:12px;color:var(--muted);margin-bottom:14px;}
+.dc-branch-nearby strong{color:var(--navy);font-weight:600;}
+.dc-branch-actions{display:flex;gap:8px;}
+.dc-branch-btn{display:inline-flex;align-items:center;gap:5px;padding:9px 14px;border-radius:9px;font-size:12.5px;font-weight:600;text-decoration:none;cursor:pointer;border:none;font-family:'Poppins',sans-serif;transition:background .2s;flex:1;justify-content:center;}
+.dc-branch-btn--call{background:var(--offwhite);color:var(--navy);border:1px solid var(--border);}
+.dc-branch-btn--call:hover{background:#eef1fc;}
+.dc-branch-btn--map{background:var(--orange);color:#fff;}
+.dc-branch-btn--map:hover{background:var(--orange-light);}
+.dc-branch-walkin{background:var(--offwhite);border-radius:14px;padding:22px 28px;margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;border:1.5px solid var(--border);}
+.dc-branch-walkin p{font-size:14px;color:#374151;}<br>.dc-branch-walkin strong{color:var(--navy);}
+
+/* ─── C12: HONEST ADVICE ─── */
+.dc-honest{background:var(--offwhite);padding:72px 0;}
+.dc-honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0;}
+.dc-honest-card{background:#fff;border-radius:var(--radius);padding:28px;border:1.5px solid var(--border);}
+.dc-honest-card--self{border-top:4px solid var(--green);}
+.dc-honest-card--coaching{border-top:4px solid var(--orange);}
+.dc-honest-card-label{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 12px;border-radius:20px;margin-bottom:14px;}
+.dc-honest-card--self .dc-honest-card-label{background:#e6f9f0;color:#007a47;}
+.dc-honest-card--coaching .dc-honest-card-label{background:rgba(255,107,0,.08);color:var(--orange);}
+.dc-honest-card-title{font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:16px;line-height:1.4;}
+.dc-honest-point{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#374151;line-height:1.6;padding:8px 0;border-bottom:1px solid var(--border);}
+.dc-honest-point:last-child{border-bottom:none;}
+.dc-honest-point strong{color:var(--navy);}
+.dc-honest-dot{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px;}
+.dc-honest-card--self .dc-honest-dot{background:#e6f9f0;color:var(--green);}
+.dc-honest-card--coaching .dc-honest-dot{background:rgba(255,107,0,.10);color:var(--orange);}
+.dc-honest-note{background:var(--navy);border-radius:14px;padding:22px 26px;display:flex;gap:12px;align-items:flex-start;}
+.dc-honest-note-text{font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.7;}
+.dc-honest-note-text strong{color:var(--yellow);}
+
+/* ─── C13: FAQ ─── */
+.dc-faq{background:#fff;padding:72px 0;}
+.dc-faq-body{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin-top:36px;}
+.dc-faq-list{display:flex;flex-direction:column;gap:10px;}
+.dc-faq-item{background:#fff;border-radius:14px;border:1.5px solid var(--border);overflow:hidden;transition:box-shadow .2s;}
+.dc-faq-item.open{box-shadow:var(--shadow);border-color:#c5d0ee;}
+.dc-faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;cursor:pointer;}
+.dc-faq-q-text{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:var(--navy);line-height:1.4;flex:1;}
+.dc-faq-item.open .dc-faq-q-text{color:var(--orange);}
+.dc-faq-icon{width:26px;height:26px;border-radius:7px;background:var(--offwhite);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,transform .3s;}
+.dc-faq-item.open .dc-faq-icon{background:var(--orange);transform:rotate(45deg);}
+.dc-faq-icon svg{width:12px;height:12px;stroke:var(--navy);stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s;}
+.dc-faq-item.open .dc-faq-icon svg{stroke:#fff;}
+.dc-faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.dc-faq-item.open .dc-faq-a{max-height:300px;}
+.dc-faq-a-inner{padding:0 20px 18px;font-size:13.5px;color:var(--muted);line-height:1.75;border-top:1px solid var(--border);}
+.dc-faq-a-inner p{padding-top:14px;}
+.dc-faq-a-inner strong{color:var(--navy);font-weight:600;}
+.dc-faq-aside{display:flex;flex-direction:column;gap:16px;position:sticky;top:24px;}
+.dc-faq-contact{background:var(--navy);border-radius:var(--radius);padding:28px 24px;}
+.dc-faq-contact-title{font-family:'Nunito',sans-serif;font-size:18px;font-weight:800;color:#fff;margin-bottom:6px;}
+.dc-faq-contact-sub{font-size:13px;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:20px;}
+.dc-faq-contact-btn{display:block;background:var(--orange);color:#fff;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;padding:12px 20px;border-radius:10px;text-align:center;text-decoration:none;margin-bottom:10px;transition:background .2s;}
+.dc-faq-contact-btn:hover{background:var(--orange-light);}
+.dc-faq-contact-call{display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(255,255,255,.08);color:#fff;font-size:14px;font-weight:600;padding:11px 20px;border-radius:10px;text-decoration:none;border:1px solid rgba(255,255,255,.15);}
+.dc-faq-pills{background:#fff;border-radius:var(--radius);border:1.5px solid var(--border);padding:20px 24px;}
+.dc-faq-pills-title{font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:12px;}
+.dc-faq-pill-wrap{display:flex;flex-wrap:wrap;gap:8px;}
+.dc-faq-pill{background:var(--offwhite);color:var(--navy);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid var(--border);}
+
+/* ─── C14: FINAL CTA ─── */
+.dc-cta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:80px 0;position:relative;overflow:hidden;}
+.dc-cta::before{content:'';position:absolute;top:-80px;right:-60px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,210,0,.07) 0%,transparent 70%);pointer-events:none;}
+.dc-cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;}
+.dc-cta-eyebrow{display:inline-block;background:rgba(255,210,0,.15);color:var(--yellow);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:16px;}
+.dc-cta-h2{font-family:'Nunito',sans-serif;font-size:clamp(28px,3.5vw,40px);font-weight:900;color:#fff;line-height:1.2;margin-bottom:12px;}
+.dc-cta-h2 span{color:var(--yellow);}
+.dc-cta-sub{font-size:14px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:28px;max-width:480px;}
+.dc-cta-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;}
+.dc-cta-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:6px 14px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.85);}
+.dc-cta-pill::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--yellow);flex-shrink:0;}
+.dc-cta-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.dc-cta-btn-primary{background:var(--orange);color:#fff;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:14px 28px;border-radius:12px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s,transform .15s;white-space:nowrap;}
+.dc-cta-btn-primary:hover{background:var(--orange-light);transform:translateY(-2px);}
+.dc-cta-btn-wa{background:#25d366;color:#fff;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:14px 28px;border-radius:12px;border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background .2s;white-space:nowrap;}
+.dc-cta-btn-wa:hover{background:#1db954;}
+.dc-cta-fcard{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:0 16px 56px rgba(0,0,0,.25);}
+.dc-cta-fcard-title{font-family:'Nunito',sans-serif;font-size:18px;font-weight:900;color:var(--navy);margin-bottom:4px;}
+.dc-cta-fcard-sub{font-size:13px;color:#5A6382;margin-bottom:20px;}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .dc-hero-grid,.dc-what-grid,.dc-midform-card,.dc-syl-panel.active,.dc-batch-grid,.dc-why-top,.dc-usp-grid,.dc-fac-grid,.dc-demo-grid,.dc-testi-grid,.dc-branch-grid,.dc-honest-grid,.dc-faq-body,.dc-cta-grid{grid-template-columns:1fr;}
+  .dc-trust-inner{gap:0;}
+  .dc-trust-item{padding:8px 14px;border-right:none;border-bottom:1px solid rgba(255,255,255,.2);}
+  .dc-trust-item:last-child{border-bottom:none;}
+  .dc-midform-card{padding:28px 22px;}
+  .dc-branch-walkin{flex-direction:column;}
+  .dc-faq-aside{position:static;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+  C1 — HERO + FORM
+══════════════════════════════════════ -->
+<section class="dc-hero">
+  <div class="dc-wrap">
+    <div class="dc-hero-grid">
+      <div>
+        <div class="dc-hero-badge">⭐ Karnataka's DCET Specialist — 4 Branches in Bangalore</div>
+        <h1 class="dc-hero-h1">Best DCET Coaching<br>in Bangalore —<br><span>Long-Term. Small Batches.</span></h1>
+        <p class="dc-hero-sub">Expert coaching for Diploma CET (DCET) — the Karnataka lateral entry exam for diploma holders seeking direct 2nd-year B.E./B.Tech admission. Engineering and Architecture streams. All 4 branches across Bangalore.</p>
+        <ul class="dc-hero-bullets">
+          <li>Long-term programme — full DCET syllabus covered systematically</li>
+          <li>Under 20 students per batch — faculty knows every student</li>
+          <li>Engineering & Architecture streams — both covered</li>
+          <li>Fortnightly mock tests in exact DCET pattern</li>
+          <li>4 branches: Jayanagar · Koramangala · Malleshwaram · Yelahanka</li>
+        </ul>
+        <div class="dc-hero-stats">
+          <div><div class="dc-hero-stat-n">&lt;20</div><div class="dc-hero-stat-l">Students/Batch</div></div>
+          <div><div class="dc-hero-stat-n">5,000+</div><div class="dc-hero-stat-l">Students Trained</div></div>
+          <div><div class="dc-hero-stat-n">10+</div><div class="dc-hero-stat-l">Years Experience</div></div>
+          <div><div class="dc-hero-stat-n">4.8★</div><div class="dc-hero-stat-l">Google Rating</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="dc-fcard">
+          <div class="dc-fcard-title">Check Batch Availability</div>
+          <div class="dc-fcard-sub">DCET batches fill fast. We call back within 2 hours.</div>
+          <input class="dc-fi" type="text" placeholder="Your Full Name">
+          <input class="dc-fi" type="text" placeholder="Stream (Engineering / Architecture)">
+          <input class="dc-fi" type="tel" placeholder="Phone Number">
+          <button class="dc-fbtn">Check Availability →</button>
+          <div class="dc-flock">🔒 No spam. Counsellor calls within 2 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C2 — TRUST BAR
+══════════════════════════════════════ -->
+<section class="dc-trust">
+  <div class="dc-wrap">
+    <div class="dc-trust-inner">
+      <div class="dc-trust-item">
+        <div><div class="dc-trust-n">5,000+</div><div class="dc-trust-l">Students Trained</div></div>
+      </div>
+      <div class="dc-trust-item">
+        <div><div class="dc-trust-n">500+</div><div class="dc-trust-l">NEET/JEE/DCET Qualifiers</div></div>
+      </div>
+      <div class="dc-trust-item">
+        <div><div class="dc-trust-n">&lt;20</div><div class="dc-trust-l">Students Per Batch</div></div>
+      </div>
+      <div class="dc-trust-item">
+        <div><div class="dc-trust-n">10+</div><div class="dc-trust-l">Years Experience</div></div>
+      </div>
+      <div class="dc-trust-item">
+        <div><div class="dc-trust-n">4.8★</div><div class="dc-trust-l">Google Rating</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C3 — WHAT IS DCET?
+══════════════════════════════════════ -->
+<section class="dc-what">
+  <div class="dc-wrap">
+    <div class="dc-tag">About the Exam</div>
+    <h2 class="dc-h2">What is DCET and <span>Who Should Appear?</span></h2>
+    <div class="dc-capsule"><strong>DCET (Diploma Common Entrance Test)</strong> is conducted by KEA for diploma holders in Engineering or Architecture who want direct admission to the 2nd year (lateral entry) of B.E./B.Tech or B.Arch programmes in Karnataka colleges. If you have a diploma and want to enter engineering degree directly at 2nd year — DCET is the exam.</div>
+    <div class="dc-what-grid">
+      <div class="dc-what-body">
+        <p>DCET is not the same as KCET. It is a separate exam designed exclusively for diploma holders — students who have completed a 3-year diploma in Engineering or Architecture from a government or private polytechnic and want to step into a degree programme without repeating from Year 1.</p>
+        <p>The exam is conducted annually by the <strong>Karnataka Examinations Authority (KEA)</strong>. Scores are used for admission to government, aided, and unaided engineering colleges across Karnataka under the <strong>lateral entry scheme</strong>.</p>
+        <p>Competition is real — tens of thousands of diploma holders appear statewide. A structured long-term preparation programme is the difference between a seat in a top college and a missed opportunity.</p>
+        <a href="#" class="dc-btn" style="margin-top:8px;">Get DCET Counselling →</a>
+      </div>
+      <div class="dc-what-facts">
+        <div class="dc-what-facts-title">DCET 2025 — Key Facts</div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Conducted by</span><span class="dc-fact-val">KEA (Karnataka)</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Eligibility</span><span class="dc-fact-val">Diploma in Engg / Architecture</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Admission to</span><span class="dc-fact-val">2nd year B.E./B.Tech/B.Arch</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Streams</span><span class="dc-fact-val">Engineering · Architecture</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Total marks</span><span class="dc-fact-val">100 marks</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Duration</span><span class="dc-fact-val">90 minutes</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Negative marking</span><span class="dc-fact-val">None</span></div>
+        <div class="dc-fact-row"><span class="dc-fact-label">Exam mode</span><span class="dc-fact-val">Offline (pen & paper)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C4 — MID-PAGE FORM
+══════════════════════════════════════ -->
+<section class="dc-midform">
+  <div class="dc-wrap">
+    <div class="dc-midform-card">
+      <div>
+        <div class="dc-tag">Free Counselling</div>
+        <div class="dc-midform-left-title">Not sure which DCET programme fits you?<br>Talk to a counsellor.</div>
+        <div class="dc-midform-left-sub">Tell us your diploma stream and current preparation level. We'll tell you exactly what you need — long-term batch, crash course, or self-study guidance.</div>
+        <ul class="dc-midform-checks">
+          <li>Counsellor calls within 2 hours</li>
+          <li>Honest advice — not a sales pitch</li>
+          <li>Free demo class at any branch</li>
+        </ul>
+      </div>
+      <div>
+        <input class="dc-fi" type="text" placeholder="Your Full Name">
+        <input class="dc-fi" type="text" placeholder="Diploma Stream (e.g. Civil, Mechanical, CS)">
+        <input class="dc-fi" type="tel" placeholder="Phone Number">
+        <button class="dc-fbtn">Get Free Counselling →</button>
+        <div class="dc-flock" style="margin-top:10px;">🔒 No spam. No pressure to enrol.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C5 — SYLLABUS
+══════════════════════════════════════ -->
+<section class="dc-syl">
+  <div class="dc-wrap">
+    <div class="dc-tag">Syllabus</div>
+    <h2 class="dc-h2">What is the <span>DCET 2025 Syllabus?</span></h2>
+    <div class="dc-capsule">DCET syllabus is based on your diploma subjects. <strong>Engineering stream</strong> covers Maths, Physics/Chemistry, and core branch subjects. <strong>Architecture stream</strong> covers Maths, Drawing, and Aptitude. The exam tests diploma-level knowledge — not PUC or degree-level content.</div>
+
+    <div class="dc-syl-tabs">
+      <button class="dc-syl-tab active-eng" onclick="dcSylTab('eng',this)">⚙️ Engineering Stream</button>
+      <button class="dc-syl-tab" onclick="dcSylTab('arch',this)">🏛️ Architecture Stream</button>
+    </div>
+
+    <div class="dc-syl-panel active" id="dc-syl-eng">
+      <div class="dc-syl-card">
+        <div class="dc-syl-card-head"><div class="dc-syl-card-icon" style="background:rgba(10,31,92,.08);">📐</div>Mathematics</div>
+        <ul class="dc-syl-list">
+          <li><span class="dc-syl-list-name">Algebra</span><span class="dc-syl-badge dc-syl-badge--eng">High weightage</span></li>
+          <li><span class="dc-syl-list-name">Trigonometry</span><span class="dc-syl-badge dc-syl-badge--eng">High weightage</span></li>
+          <li><span class="dc-syl-list-name">Coordinate Geometry</span><span class="dc-syl-badge dc-syl-badge--eng">Important</span></li>
+          <li><span class="dc-syl-list-name">Differential Calculus</span><span class="dc-syl-badge dc-syl-badge--eng">Important</span></li>
+          <li><span class="dc-syl-list-name">Integral Calculus</span><span class="dc-syl-badge dc-syl-badge--eng">Important</span></li>
+          <li><span class="dc-syl-list-name">Statistics & Probability</span><span class="dc-syl-badge dc-syl-badge--eng">Moderate</span></li>
+        </ul>
+      </div>
+      <div class="dc-syl-card">
+        <div class="dc-syl-card-head"><div class="dc-syl-card-icon" style="background:rgba(255,107,0,.08);">⚗️</div>Physics & Chemistry / Core Branch</div>
+        <ul class="dc-syl-list">
+          <li><span class="dc-syl-list-name">Applied Physics (Mechanics, Heat, Optics)</span><span class="dc-syl-badge dc-syl-badge--eng">High weightage</span></li>
+          <li><span class="dc-syl-list-name">Applied Chemistry</span><span class="dc-syl-badge dc-syl-badge--eng">Important</span></li>
+          <li><span class="dc-syl-list-name">Engineering Graphics / Drawing</span><span class="dc-syl-badge dc-syl-badge--eng">Important</span></li>
+          <li><span class="dc-syl-list-name">Branch subjects (Civil / Mech / CS / ECE)</span><span class="dc-syl-badge dc-syl-badge--eng">Varies by stream</span></li>
+        </ul>
+        <div class="dc-syl-note"><strong>Note:</strong> DCET engineering question paper has three parts — Maths, Basic Science, and Branch-specific subjects. Elite IIT tailors coaching to your diploma branch.</div>
+      </div>
+    </div>
+
+    <div class="dc-syl-panel" id="dc-syl-arch">
+      <div class="dc-syl-card">
+        <div class="dc-syl-card-head"><div class="dc-syl-card-icon" style="background:rgba(255,107,0,.08);">📏</div>Mathematics & Aptitude</div>
+        <ul class="dc-syl-list">
+          <li><span class="dc-syl-list-name">Algebra & Trigonometry</span><span class="dc-syl-badge dc-syl-badge--arch">High weightage</span></li>
+          <li><span class="dc-syl-list-name">Coordinate Geometry</span><span class="dc-syl-badge dc-syl-badge--arch">Important</span></li>
+          <li><span class="dc-syl-list-name">Visualisation & Spatial Aptitude</span><span class="dc-syl-badge dc-syl-badge--arch">High weightage</span></li>
+          <li><span class="dc-syl-list-name">General Aptitude</span><span class="dc-syl-badge dc-syl-badge--arch">Moderate</span></li>
+        </ul>
+      </div>
+      <div class="dc-syl-card">
+        <div class="dc-syl-card-head"><div class="dc-syl-card-icon" style="background:rgba(10,31,92,.08);">✏️</div>Drawing & Design</div>
+        <ul class="dc-syl-list">
+          <li><span class="dc-syl-list-name">Freehand Drawing</span><span class="dc-syl-badge dc-syl-badge--arch">High weightage</span></li>
+          <li><span class="dc-syl-list-name">Geometrical Drawing</span><span class="dc-syl-badge dc-syl-badge--arch">Important</span></li>
+          <li><span class="dc-syl-list-name">3D Visualisation</span><span class="dc-syl-badge dc-syl-badge--arch">Important</span></li>
+          <li><span class="dc-syl-list-name">Colour & Texture</span><span class="dc-syl-badge dc-syl-badge--arch">Moderate</span></li>
+        </ul>
+        <div class="dc-syl-note"><strong>Note:</strong> Architecture stream needs strong drawing and spatial skills alongside Maths. Elite IIT coaching covers drawing practice as a structured component.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C6 — BATCH DETAILS
+══════════════════════════════════════ -->
+<section class="dc-batch">
+  <div class="dc-wrap">
+    <div class="dc-tag">Programmes</div>
+    <h2 class="dc-h2">DCET Long-Term Coaching<br><span>Batch Details at Elite IIT</span></h2>
+    <div class="dc-capsule">Elite IIT focuses on <strong>long-term DCET coaching</strong> — a structured programme that covers the full syllabus systematically over several months, not a last-minute crash course. Batches are under 20 students. Mock tests every fortnight.</div>
+    <div class="dc-batch-grid">
+
+      <div class="dc-batch-card">
+        <div class="dc-batch-badge">LONG-TERM · ENGINEERING</div>
+        <div class="dc-batch-title">Engineering Stream Programme</div>
+        <div class="dc-batch-desc">Full DCET Engineering syllabus — Maths, Applied Science, and branch-specific subjects. Separate focus tracks for Civil, Mechanical, CS/ECE students.</div>
+        <div class="dc-batch-detail"><span>📅</span><span>6–8 months duration · starts after diploma result</span></div>
+        <div class="dc-batch-detail"><span>👥</span><span>Under 20 students per batch</span></div>
+        <div class="dc-batch-detail"><span>📋</span><span>Fortnightly mock tests in DCET pattern</span></div>
+        <div class="dc-batch-detail"><span>📚</span><span>Study material included</span></div>
+        <button class="dc-btn" style="width:100%;margin-top:16px;display:block;text-align:center;">Enquire About This Batch →</button>
+      </div>
+
+      <div class="dc-batch-card">
+        <div class="dc-batch-badge">LONG-TERM · ARCHITECTURE</div>
+        <div class="dc-batch-title">Architecture Stream Programme</div>
+        <div class="dc-batch-desc">DCET Architecture syllabus — Maths, Drawing, Spatial Aptitude, and Visualisation. Includes structured drawing practice sessions alongside theory.</div>
+        <div class="dc-batch-detail"><span>📅</span><span>6–8 months duration · starts after diploma result</span></div>
+        <div class="dc-batch-detail"><span>👥</span><span>Under 20 students per batch</span></div>
+        <div class="dc-batch-detail"><span>✏️</span><span>Drawing sessions included — not just theory</span></div>
+        <div class="dc-batch-detail"><span>📚</span><span>Study material included</span></div>
+        <button class="dc-btn" style="width:100%;margin-top:16px;display:block;text-align:center;">Enquire About This Batch →</button>
+      </div>
+
+      <div class="dc-batch-card">
+        <div class="dc-batch-badge" style="background:var(--orange);">WHAT YOU GET</div>
+        <div class="dc-batch-title">Included in All Batches</div>
+        <div class="dc-batch-desc">Everything you need for DCET preparation — no separate purchase required at any stage.</div>
+        <div class="dc-batch-detail"><span>✓</span><span>Subject-wise theory notes aligned to DCET pattern</span></div>
+        <div class="dc-batch-detail"><span>✓</span><span>Previous year DCET papers with solutions</span></div>
+        <div class="dc-batch-detail"><span>✓</span><span>Weekly chapter tests</span></div>
+        <div class="dc-batch-detail"><span>✓</span><span>Personal error analysis after each mock</span></div>
+        <div class="dc-batch-detail"><span>✓</span><span>Scheduled doubt sessions within 24 hours</span></div>
+        <button class="dc-btn dc-btn--navy" style="width:100%;margin-top:16px;display:block;text-align:center;">Book Free Demo Class →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C7 — WHY ELITE IIT
+══════════════════════════════════════ -->
+<section class="dc-why">
+  <div class="dc-wrap">
+    <div class="dc-tag">Why Elite IIT</div>
+    <h2 class="dc-h2">Why Choose Elite IIT for<br><span>DCET Coaching in Bangalore?</span></h2>
+    <div class="dc-why-top">
+      <div>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:20px;">Most DCET coaching centres treat diploma students as an afterthought — the same generic coaching recycled from their KCET programme. DCET has a different syllabus, a different exam structure, and a different student profile. At Elite IIT, DCET coaching is built specifically for diploma holders.</p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;">The single most important factor is <strong style="color:var(--navy);">batch size</strong>. In a batch of 60 students, faculty cannot track individual progress. In a batch of under 20, they can — and they do.</p>
+      </div>
+      <div class="dc-vs">
+        <div class="dc-vs-title">Elite IIT vs Generic DCET Coaching</div>
+        <div class="dc-vs-heads">
+          <div class="dc-vs-head dc-vs-head--bad">Generic Institutes</div>
+          <div class="dc-vs-head dc-vs-head--good">Elite IIT</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <div class="dc-vs-row"><div class="dc-vs-cell dc-vs-cell--bad"><div class="dc-vs-dot dc-vs-dot--bad"></div>KCET material recycled</div><div class="dc-vs-cell dc-vs-cell--good"><div class="dc-vs-dot dc-vs-dot--good"></div>DCET-specific content</div></div>
+          <div class="dc-vs-row"><div class="dc-vs-cell dc-vs-cell--bad"><div class="dc-vs-dot dc-vs-dot--bad"></div>50–80 students/batch</div><div class="dc-vs-cell dc-vs-cell--good"><div class="dc-vs-dot dc-vs-dot--good"></div>Under 20 students</div></div>
+          <div class="dc-vs-row"><div class="dc-vs-cell dc-vs-cell--bad"><div class="dc-vs-dot dc-vs-dot--bad"></div>Class-wide feedback</div><div class="dc-vs-cell dc-vs-cell--good"><div class="dc-vs-dot dc-vs-dot--good"></div>Personal error reports</div></div>
+          <div class="dc-vs-row"><div class="dc-vs-cell dc-vs-cell--bad"><div class="dc-vs-dot dc-vs-dot--bad"></div>Generic timetable</div><div class="dc-vs-cell dc-vs-cell--good"><div class="dc-vs-dot dc-vs-dot--good"></div>Branch-specific focus</div></div>
+          <div class="dc-vs-row"><div class="dc-vs-cell dc-vs-cell--bad"><div class="dc-vs-dot dc-vs-dot--bad"></div>Doubt waits days</div><div class="dc-vs-cell dc-vs-cell--good"><div class="dc-vs-dot dc-vs-dot--good"></div>Resolved within 24h</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="dc-usp-grid">
+      <div class="dc-usp-item"><div class="dc-usp-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="dc-usp-title">DCET-specific syllabus — not KCET material</div><div class="dc-usp-text">Coaching built around the actual DCET exam pattern, not repurposed from KCET or JEE prep.</div><div class="dc-usp-pill">Purpose-built</div></div></div>
+      <div class="dc-usp-item"><div class="dc-usp-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="dc-usp-title">Branch-specific tracks for Engineering</div><div class="dc-usp-text">Civil, Mechanical, CS/ECE, and Electrical — each branch has different DCET paper content. We tailor accordingly.</div><div class="dc-usp-pill">Branch-tailored</div></div></div>
+      <div class="dc-usp-item"><div class="dc-usp-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="dc-usp-title">Under 20 students — fixed policy</div><div class="dc-usp-text">Every batch is hard-capped. Not an average. Faculty tracks every student individually throughout the programme.</div><div class="dc-usp-pill">Non-negotiable</div></div></div>
+      <div class="dc-usp-item"><div class="dc-usp-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="dc-usp-title">4 branches across Bangalore</div><div class="dc-usp-text">Jayanagar, Koramangala, Malleshwaram, and Yelahanka — all 4 branches run DCET coaching.</div><div class="dc-usp-pill">Jayanagar · Koramangala · Malleshwaram · Yelahanka</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C8 — FACULTY (PLACEHOLDERS)
+══════════════════════════════════════ -->
+<section class="dc-fac">
+  <div class="dc-wrap">
+    <div class="dc-tag">Faculty</div>
+    <h2 class="dc-h2">Meet Your <span>DCET Faculty</span></h2>
+    <p class="dc-sub">Subject specialists who understand the DCET exam pattern — not generic tutors. Every faculty member has coached diploma students specifically.</p>
+    <div class="dc-fac-grid">
+      <div class="dc-fac-card">
+        <div class="dc-fac-photo-placeholder">👩‍🏫</div>
+        <div class="dc-fac-name">Bhoomika B N</div>
+        <div class="dc-fac-subj">Mathematics</div>
+        <div class="dc-fac-meta">M.Sc Maths · 5 Years Experience</div>
+      </div>
+      <div class="dc-fac-card">
+        <div class="dc-fac-photo-placeholder">👩‍🏫</div>
+        <div class="dc-fac-name">Usha S</div>
+        <div class="dc-fac-subj">Mathematics</div>
+        <div class="dc-fac-meta">M.Sc Maths · 8 Years Experience</div>
+      </div>
+      <div class="dc-fac-card">
+        <div class="dc-fac-photo-placeholder">👨‍🏫</div>
+        <div class="dc-fac-name">Skanda</div>
+        <div class="dc-fac-subj">Physics</div>
+        <div class="dc-fac-meta">M.Sc Physics · 5 Years Experience</div>
+      </div>
+      <div class="dc-fac-card">
+        <div class="dc-fac-photo-placeholder">👩‍🏫</div>
+        <div class="dc-fac-name">Ramya P Deshpande</div>
+        <div class="dc-fac-subj">Chemistry</div>
+        <div class="dc-fac-meta">M.Sc Chemistry · 5 Years Experience</div>
+      </div>
+      <div class="dc-fac-card" style="background:var(--offwhite);border:1.5px dashed var(--border);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:180px;">
+        <div style="font-size:32px;margin-bottom:10px;">➕</div>
+        <div style="font-size:13px;color:var(--muted);text-align:center;font-weight:600;">Branch-specific<br>Engineering Faculty</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px;">Civil · Mech · CS/ECE</div>
+      </div>
+      <div class="dc-fac-card" style="background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:180px;">
+        <div style="font-size:28px;color:var(--yellow);font-family:'Nunito',sans-serif;font-weight:900;">View All</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.7);margin-top:6px;text-align:center;">Full faculty profiles on<br>our faculty page</div>
+        <a href="/our-faculty/" style="margin-top:14px;" class="dc-btn" style="font-size:13px;">Our Faculty →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C9 — DEMO FORM
+══════════════════════════════════════ -->
+<section class="dc-demo">
+  <div class="dc-wrap">
+    <div class="dc-demo-grid">
+      <div>
+        <div class="dc-tag dc-tag--white">Free Demo Class</div>
+        <div class="dc-demo-left-title">Book a Free DCET<br>Demo Class at Elite IIT</div>
+        <div class="dc-demo-left-sub">One hour. Real teaching. No obligation. Walk into any of our 4 branches in Bangalore — no booking required — or submit this form and we'll schedule it for you.</div>
+        <div class="dc-demo-steps">
+          <div class="dc-demo-step"><div class="dc-demo-step-num">1</div><div class="dc-demo-step-body"><strong>Full chapter taught at actual class pace</strong><p>Real DCET content — not a presentation about the coaching.</p></div></div>
+          <div class="dc-demo-step"><div class="dc-demo-step-num">2</div><div class="dc-demo-step-body"><strong>See the actual batch size</strong><p>Walk into a real class. Count the students yourself.</p></div></div>
+          <div class="dc-demo-step"><div class="dc-demo-step-num">3</div><div class="dc-demo-step-body"><strong>Counselling on your branch & batch</strong><p>Honest guidance on which programme fits your diploma stream.</p></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="dc-demo-fcard">
+          <div class="dc-demo-fcard-title">Book Your Free Demo Class</div>
+          <div class="dc-demo-fcard-sub">Takes 2 minutes. We confirm within 2 hours.</div>
+          <input class="dc-fi" type="text" placeholder="Your Full Name">
+          <input class="dc-fi" type="text" placeholder="Diploma Stream / Branch">
+          <input class="dc-fi" type="tel" placeholder="Phone Number">
+          <button class="dc-fbtn">Book Free Demo →</button>
+          <div class="dc-flock" style="margin-top:10px;">Parents welcome to attend. No fee. No commitment.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C10 — TESTIMONIALS (PLACEHOLDERS)
+══════════════════════════════════════ -->
+<section class="dc-testi">
+  <div class="dc-wrap">
+    <div class="dc-tag">Student Reviews</div>
+    <h2 class="dc-h2">What DCET Students Say<br><span>About Elite IIT</span></h2>
+    <div class="dc-testi-grid">
+      <div class="dc-testi-card">
+        <div class="dc-testi-stars">★★★★★</div>
+        <div class="dc-testi-text">"The batch size was exactly what made the difference. My Maths faculty actually knew where I was struggling each week — not just my name."</div>
+        <div class="dc-testi-name">— DCET Student, Jayanagar</div>
+        <div class="dc-testi-role">Selected · B.E. Civil · 2025</div>
+      </div>
+      <div class="dc-testi-card">
+        <div class="dc-testi-stars">★★★★★</div>
+        <div class="dc-testi-text">"I had tried self-study for 3 months and wasn't moving. Joined Elite IIT's long-term batch and cracked DCET in my first attempt. The mock tests were exactly like the real paper."</div>
+        <div class="dc-testi-name">— DCET Student, Yelahanka</div>
+        <div class="dc-testi-role">Selected · B.E. Mechanical · 2025</div>
+      </div>
+      <div class="dc-testi-card">
+        <div class="dc-testi-stars">★★★★★</div>
+        <div class="dc-testi-text">"Doubt sessions within 24 hours is real — I tested it multiple times. Never waited more than a day for a response to anything."</div>
+        <div class="dc-testi-name">— DCET Student, Koramangala</div>
+        <div class="dc-testi-role">Selected · B.Tech CS · 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C11 — BRANCHES + NEARBY AREAS
+══════════════════════════════════════ -->
+<section class="dc-branch-sec">
+  <div class="dc-wrap">
+    <div class="dc-tag">Our Centres</div>
+    <h2 class="dc-h2">4 DCET Coaching Centres<br><span>Across Bangalore</span></h2>
+    <p class="dc-sub">All branches run the same DCET programme, the same faculty standards, and the same batch size limit. Walk in for a free demo at any branch — no prior appointment needed.</p>
+    <div class="dc-branch-grid">
+
+      <div class="dc-branch-card">
+        <div class="dc-branch-head">
+          <div class="dc-branch-head-left"><div class="dc-branch-num">01</div><div><div class="dc-branch-name">Jayanagar</div><div class="dc-branch-area">South Bangalore</div></div></div>
+          <div class="dc-branch-open">Open Now</div>
+        </div>
+        <div class="dc-branch-body">
+          <div class="dc-branch-addr">63, 41st Cross, 2nd Main Road, 8th Block, Jayanagar, Bengaluru – 560082</div>
+          <div class="dc-branch-nearby"><strong>Also serves students from:</strong> BTM Layout, JP Nagar, Banashankari, Basavanagudi, Kumaraswamy Layout, Hulimavu</div>
+          <div class="dc-branch-actions">
+            <a href="tel:+918050506222" class="dc-branch-btn dc-branch-btn--call">📞 08050506222</a>
+            <a href="https://share.google/5KsxFNrsYwSEfaNi2" target="_blank" class="dc-branch-btn dc-branch-btn--map">→ Get Directions</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dc-branch-card">
+        <div class="dc-branch-head">
+          <div class="dc-branch-head-left"><div class="dc-branch-num">02</div><div><div class="dc-branch-name">Koramangala</div><div class="dc-branch-area">South-East Bangalore</div></div></div>
+          <div class="dc-branch-open">Open Now</div>
+        </div>
+        <div class="dc-branch-body">
+          <div class="dc-branch-addr">3rd Floor, No 5, Hosur Main Road, Koramangala, Bengaluru – 560029</div>
+          <div class="dc-branch-nearby"><strong>Also serves students from:</strong> HSR Layout, Madiwala, Electronic City, Bellandur, Sarjapur, Bommanahalli</div>
+          <div class="dc-branch-actions">
+            <a href="tel:+917760763337" class="dc-branch-btn dc-branch-btn--call">📞 07760763337</a>
+            <a href="https://share.google/NzIYB4pC3FbsE6Rry" target="_blank" class="dc-branch-btn dc-branch-btn--map">→ Get Directions</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dc-branch-card">
+        <div class="dc-branch-head">
+          <div class="dc-branch-head-left"><div class="dc-branch-num">03</div><div><div class="dc-branch-name">Malleshwaram</div><div class="dc-branch-area">North-West Bangalore</div></div></div>
+          <div class="dc-branch-open">Open Now</div>
+        </div>
+        <div class="dc-branch-body">
+          <div class="dc-branch-addr">282, Sampige Road, 18th Cross, Malleshwaram, Bengaluru – 560003</div>
+          <div class="dc-branch-nearby"><strong>Also serves students from:</strong> Rajajinagar, Vijayanagar, Yeshwantpur, Mahalakshmi Layout, Nagarbhavi, Mathikere</div>
+          <div class="dc-branch-actions">
+            <a href="tel:+917795400014" class="dc-branch-btn dc-branch-btn--call">📞 07795400014</a>
+            <a href="https://share.google/H3E9qXH3O835N5xbF" target="_blank" class="dc-branch-btn dc-branch-btn--map">→ Get Directions</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dc-branch-card">
+        <div class="dc-branch-head">
+          <div class="dc-branch-head-left"><div class="dc-branch-num">04</div><div><div class="dc-branch-name">Yelahanka</div><div class="dc-branch-area">North Bangalore</div></div></div>
+          <div class="dc-branch-open">Open Now</div>
+        </div>
+        <div class="dc-branch-body">
+          <div class="dc-branch-addr">HIG, 1st Main Road, Opp SBI Bank, Yelahanka New Town, Bengaluru – 560064</div>
+          <div class="dc-branch-nearby"><strong>Also serves students from:</strong> Hebbal, Thanisandra, Kogilu, Jakkur, Sahakarnagar, Vidyaranyapura, Devanahalli</div>
+          <div class="dc-branch-actions">
+            <a href="tel:+919880043200" class="dc-branch-btn dc-branch-btn--call">📞 09880043200</a>
+            <a href="https://share.google/EEYYcu5n5NjKBxfXz" target="_blank" class="dc-branch-btn dc-branch-btn--map">→ Get Directions</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="dc-branch-walkin">
+      <p><strong>Walk-ins welcome at all 4 branches.</strong> No prior appointment needed for a demo class. Just walk in during class hours and speak to our branch coordinator.</p>
+      <button class="dc-btn">Book Free Demo Class</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C12 — HONEST ADVICE
+══════════════════════════════════════ -->
+<section class="dc-honest">
+  <div class="dc-wrap">
+    <div class="dc-tag">Before You Join</div>
+    <h2 class="dc-h2">Do You Really Need DCET Coaching<br><span>or Can You Self-Study?</span></h2>
+    <div class="dc-capsule">Coaching is not mandatory for DCET. Several students qualify through self-study. But if you have weak subjects, inconsistent mock scores, or failed a previous attempt — structured coaching with individual feedback significantly improves your outcome.</div>
+    <div class="dc-honest-grid">
+      <div class="dc-honest-card dc-honest-card--self">
+        <div class="dc-honest-card-label">✓ Self-study may work if…</div>
+        <div class="dc-honest-card-title">You may not need coaching if all of these apply</div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">✓</div><div>Your diploma percentage was <strong>above 75%</strong> consistently</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">✓</div><div>You have <strong>no significant weak subject</strong> in Maths or core branch papers</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">✓</div><div>You have <strong>strong self-discipline</strong> and a structured daily routine</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">✓</div><div>You have <strong>6+ months</strong> before your target DCET exam</div></div>
+      </div>
+      <div class="dc-honest-card dc-honest-card--coaching">
+        <div class="dc-honest-card-label">→ Coaching helps significantly if…</div>
+        <div class="dc-honest-card-title">Coaching improves your outcome in these situations</div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">→</div><div>You have a <strong>weak subject</strong> (especially Maths) that self-study hasn't improved</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">→</div><div>Your mock test scores are <strong>inconsistent</strong> — some days good, some days not</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">→</div><div>You need <strong>external accountability</strong> to maintain study consistency</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">→</div><div>You are <strong>unclear on which topics</strong> the DCET paper actually tests heavily</div></div>
+        <div class="dc-honest-point"><div class="dc-honest-dot">→</div><div>You have <strong>attempted DCET before</strong> and missed your target college</div></div>
+      </div>
+    </div>
+    <div class="dc-honest-note">
+      <div style="font-size:20px;flex-shrink:0;">💡</div>
+      <div class="dc-honest-note-text"><strong>Elite IIT's honest take:</strong> If you are unsure, speak to a counsellor before committing to any coaching. We will tell you honestly whether structured coaching adds value to your specific situation — even if that answer is that you are already well-prepared and don't need us.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C13 — FAQ
+══════════════════════════════════════ -->
+<section class="dc-faq">
+  <div class="dc-wrap">
+    <div class="dc-tag">FAQs</div>
+    <h2 class="dc-h2">Frequently Asked <span>Questions</span></h2>
+    <p class="dc-sub">Everything diploma students and parents ask before joining DCET coaching. If your question isn't here, call us or walk into any branch.</p>
+    <div class="dc-faq-body">
+      <div class="dc-faq-list" id="dcFaq">
+
+        <div class="dc-faq-item open">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">What is DCET and who is eligible?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>DCET (Diploma Common Entrance Test) is conducted by KEA for students who have completed a 3-year diploma in Engineering or Architecture and want to join <strong>2nd year B.E./B.Tech or B.Arch</strong> programmes in Karnataka colleges through the lateral entry scheme. You must have completed your diploma from a recognised polytechnic.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">What is the DCET coaching fee at Elite IIT Bangalore?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>Contact your nearest Elite IIT branch for current DCET coaching fee details. Fees vary based on programme duration and stream. Call or walk in for a free counselling session — our coordinators will share the full fee structure with no hidden charges.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">Does DCET have negative marking?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p><strong>No negative marking</strong> in DCET. Each correct answer carries 1 mark. No marks are deducted for wrong answers. This makes attempt strategy different from exams like JEE — you should attempt every question.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">What is the DCET exam pattern?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>DCET is a <strong>100-mark, 90-minute offline exam</strong>. For Engineering stream, the paper has three sections — Mathematics, Basic Sciences (Physics/Chemistry), and branch-specific subjects. For Architecture stream, sections include Mathematics, Drawing, and Spatial Aptitude. The paper is multiple choice with no negative marking.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">Which branches of Elite IIT offer DCET coaching?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>All 4 Elite IIT branches in Bangalore offer DCET coaching — <strong>Jayanagar, Koramangala, Malleshwaram, and Yelahanka</strong>. All branches run the same programme with the same batch size limit of under 20 students.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">Is DCET coaching different from KCET coaching?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>Yes — completely different. KCET is for PUC students and tests Class 11 and 12 syllabus. DCET is for diploma holders and tests diploma-level Engineering or Architecture subjects. The syllabus, exam pattern, and difficulty level are all different. <strong>KCET coaching material is not useful for DCET</strong> — Elite IIT builds DCET coaching from the correct source content.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">How long should I prepare for DCET?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>A <strong>6 to 8-month long-term programme</strong> is the most effective for DCET. This gives enough time to cover all sections systematically, complete multiple mock test cycles, and revise weak areas before the exam. Students who join early consistently outperform those who start 2–3 months before the exam.</p></div></div>
+        </div>
+
+        <div class="dc-faq-item">
+          <div class="dc-faq-q" onclick="dcToggle(this)"><span class="dc-faq-q-text">Can I attend a free demo class before enrolling?</span><span class="dc-faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></div>
+          <div class="dc-faq-a"><div class="dc-faq-a-inner"><p>Yes. <strong>Free demo class is available at all 4 branches</strong> — Jayanagar, Koramangala, Malleshwaram, and Yelahanka. Walk in during class hours — no prior booking required. One hour of real teaching so you can see the batch size, faculty quality, and class environment before any commitment.</p></div></div>
+        </div>
+
+      </div>
+
+      <div class="dc-faq-aside">
+        <div class="dc-faq-contact">
+          <div class="dc-faq-contact-title">Still have a question?</div>
+          <div class="dc-faq-contact-sub">Our counsellors are at all 4 branches. Call or walk in — we'll answer everything before you commit to anything.</div>
+          <a href="#" class="dc-faq-contact-btn">Book Free Demo Class</a>
+          <a href="tel:+919880043200" class="dc-faq-contact-call">📞 098800 43200</a>
+        </div>
+        <div class="dc-faq-pills">
+          <div class="dc-faq-pills-title">DCET coaching at all 4 branches</div>
+          <div class="dc-faq-pill-wrap">
+            <span class="dc-faq-pill">Jayanagar</span>
+            <span class="dc-faq-pill">Koramangala</span>
+            <span class="dc-faq-pill">Malleshwaram</span>
+            <span class="dc-faq-pill">Yelahanka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  C14 — FINAL CTA
+══════════════════════════════════════ -->
+<section class="dc-cta">
+  <div class="dc-wrap">
+    <div class="dc-cta-grid">
+      <div>
+        <div class="dc-cta-eyebrow">Start Your DCET Preparation</div>
+        <h2 class="dc-cta-h2">Start Your DCET Journey<br>at <span>Elite IIT Bangalore</span></h2>
+        <p class="dc-cta-sub">A seat in a top Karnataka engineering college through lateral entry is achievable — with the right preparation. Long-term coaching. Small batches. Branch-specific content. Free demo at all 4 branches.</p>
+        <div class="dc-cta-pills">
+          <div class="dc-cta-pill">Under 20 students per batch</div>
+          <div class="dc-cta-pill">4 branches across Bangalore</div>
+          <div class="dc-cta-pill">Long-term programme</div>
+          <div class="dc-cta-pill">Free demo — no commitment</div>
+        </div>
+        <div class="dc-cta-actions">
+          <button class="dc-cta-btn-primary">Book Free Demo Class</button>
+          <a href="https://wa.me/919880043200" class="dc-cta-btn-wa" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="dc-cta-fcard">
+          <div class="dc-cta-fcard-title">Check Batch Availability</div>
+          <div class="dc-cta-fcard-sub">Seats fill fast — under 20 per batch. Enquire now.</div>
+          <input class="dc-fi" type="text" placeholder="Your Full Name">
+          <input class="dc-fi" type="text" placeholder="Stream (Engineering / Architecture)">
+          <input class="dc-fi" type="tel" placeholder="Phone Number">
+          <button class="dc-fbtn">Check Availability →</button>
+          <div class="dc-flock" style="margin-top:10px;">🔒 No spam. Counsellor calls within 2 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function dcSylTab(subject, btn) {
+  document.querySelectorAll('.dc-syl-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.dc-syl-tab').forEach(function(t){t.classList.remove('active-eng','active-arch');});
+  document.getElementById('dc-syl-'+subject).classList.add('active');
+  btn.classList.add('active-'+subject);
+}
+function dcToggle(el) {
+  var item = el.closest('.dc-faq-item');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.dc-faq-item').forEach(function(i){i.classList.remove('open');});
+  if(!isOpen){item.classList.add('open');}
+}
+</script>
+</body>
+</html>
